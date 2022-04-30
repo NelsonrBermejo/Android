@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //puente
+        //casteo: se realiza un casting para que los datos se uilicen con el tipo de dato TextView
     tv1 = (TextView)findViewById(R.id.text_resultadoResultadoPromedio);
     txt1 = (EditText)findViewById(R.id.txt_num1);
     txt2 = (EditText)findViewById(R.id.txt_num2);
@@ -38,13 +39,13 @@ public class MainActivity extends AppCompatActivity {
         int suma = num1 + num2 + num3;
         int promedio = suma/3;
 
-        if(promedio < 6){
-            String result = String.valueOf(promedio);
+        if(promedio <= 6){
+            //String result = String.valueOf(promedio);
             //muestro
-            tv1.setText(result + "Desaprobado");
+            tv1.setText( "TextView Reprobado " + promedio);
         } else {
-            String result = String.valueOf(promedio);
-            tv1.setText(result + "Aprobado");
+            //String result = String.valueOf(promedio);
+            tv1.setText( "TextView Aprobado " + promedio);
         }
     }
 }
