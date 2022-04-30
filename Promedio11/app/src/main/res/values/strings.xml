@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Promedio</string>
+    <string name="txt_matematicas_hint_string">Mátematicas</string>
+    <string name="txt_fisica_hint_string">Física</string>
+    <string name="txt_quimica_hint_string">Química</string>
+    <string name="tv_promedio_string">Promedio del Alumno</string>
+    <string name="button_evaluar">Evaluar</string>
 </resources>
