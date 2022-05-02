@@ -45,17 +45,15 @@
             android:id="@+id/rb_sumar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
-            android:textSize="24sp"
-            tools:text="@string/rb1" />
+            android:text="@string/rb1"
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/rb_restar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
-            android:textSize="24sp"
-            tools:text="@string/rb2" />
+            android:text="@string/rb2"
+            android:textSize="24sp" />
     </RadioGroup>
 
     <Button
