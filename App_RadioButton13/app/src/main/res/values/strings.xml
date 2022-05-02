@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">App_RadioButton</string>
+    <string name="app_name">Radio Button</string>
     <string name="txt_PrimerValor">Ingresa el primer valor</string>
     <string name="txt_SegundoValor">Ingresa el segundo valor</string>
     <string name="rb1">Sumar</string>
