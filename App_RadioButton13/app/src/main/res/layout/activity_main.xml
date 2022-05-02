@@ -13,6 +13,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="28dp"
         android:ems="10"
+        android:hint="@string/txt_PrimerValor"
         android:inputType="number"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +26,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="36dp"
         android:ems="10"
+        android:hint="@string/txt_SegundoValor"
         android:inputType="number"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,14 +46,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="RadioButton"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:text="@string/rb1" />
 
         <RadioButton
             android:id="@+id/rb_restar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="RadioButton"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:text="@string/rb2" />
     </RadioGroup>
 
     <Button
@@ -60,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="132dp"
         android:layout_marginTop="40dp"
-        android:text="Button"
+        android:text="@string/Button"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
@@ -71,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginTop="36dp"
-        android:text="TextView"
+        android:text="@string/TextView_resultado"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_evaluar" />
