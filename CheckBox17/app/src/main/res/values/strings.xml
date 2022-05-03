@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Check_Box</string>
+    <string name="txt_valor1_String">Ingrese Valor1</string>
+    <string name="txt_valor2_String">Ingrese Valor2</string>
+    <string name="cb_suma_String">Sumar</string>
+    <string name="cb_resta_String">Restar</string>
+    <string name="button_String">CALCULAR</string>
+    <string name="TextView_String">Resultado</string>
 </resources>

@@ -13,6 +13,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="40dp"
         android:ems="10"
+        android:hint="@string/txt_valor1_String"
         android:inputType="number"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +26,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="20dp"
         android:ems="10"
+        android:hint="@string/txt_valor2_String"
         android:inputType="number"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,8 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="36dp"
-        android:text="CheckBox"
-        android:textSize="20sp"
+        android:text="@string/cb_suma_String"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_valor2" />
 
@@ -47,8 +49,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="4dp"
-        android:text="CheckBox"
-        android:textSize="20sp"
+        android:text="@string/cb_resta_String"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/check_suma" />
 
@@ -58,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="136dp"
         android:layout_marginTop="32dp"
-        android:text="Button"
+        android:text="@string/button_String"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/check_resta" />
@@ -69,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
         android:layout_marginTop="40dp"
-        android:text="TextView"
+        android:text="@string/TextView_String"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
