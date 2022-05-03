@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Practica_RadioButton</string>
+    <string name="et1_String">Ingrese primer valor</string>
+    <string name="et2_String">Ingrese segundo valor</string>
+    <string name="rb1_sumar_String">Sumar</string>
+    <string name="rb1_restar_String">Restar</string>
+    <string name="rb1_multiplicar_String">Multiplicar</string>
+    <string name="rb1_dividir_String">Dividir</string>
+    <string name="button_String">Evaluar</string>
+    <string name="TextView_String">Resultado</string>
+
+
 </resources>
