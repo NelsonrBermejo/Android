@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 int resta = valorIngresado1_Int + valorIngresado2_Int;
                 resultado = resultado + " La resta es " + resta + " / ";
             }
+            tvResultado.setText(resultado);
 
         }
     }
