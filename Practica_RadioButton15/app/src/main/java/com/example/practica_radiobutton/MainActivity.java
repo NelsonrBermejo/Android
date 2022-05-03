@@ -3,9 +3,11 @@ package com.example.practica_radiobutton;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private EditText et1, et2;
@@ -24,5 +26,46 @@ public class MainActivity extends AppCompatActivity {
         rbRestar = (RadioButton)findViewById(R.id.rb_restar);
         rbMultiplicar = (RadioButton)findViewById(R.id.rb_multiplicar);
         rbDividir = (RadioButton)findViewById(R.id.rb_dividir);
+        tvResultado = (TextView)findViewById(R.id.textView);
+    }
+
+
+    public void Calcular (View view){
+        String valorIngresado1_String = et1.getText().toString();
+        String valorIngresado2_String = et2.getText().toString();
+
+
+        int valorIngresado1_Int = Integer.parseInt(valorIngresado1_String);
+        int valorIngresado2_Int = Integer.parseInt(valorIngresado2_String);
+
+        if(rbSumar.isChecked() == true){
+          int resultadoSuma_Int = valorIngresado1_Int + valorIngresado2_Int;
+          String resultadoSuma_String = String.valueOf(resultadoSuma_Int);
+          //Muestro resultado
+            tvResultado.setText(resultadoSuma_String);
+
+        }else if(rbRestar.isChecked() == true){
+            int resultadoResta_Int = valorIngresado1_Int - valorIngresado2_Int;
+            String resultadoResta_String = String.valueOf(resultadoResta_Int);
+            //Muestro resultado
+            tvResultado.setText(resultadoResta_String);
+
+        }else if(rbMultiplicar.isChecked() == true){
+            int resultadoMult_Int = valorIngresado1_Int * valorIngresado2_Int;
+            String resultadoMult_String = String.valueOf(resultadoMult_Int);
+            //Muestro resultado
+            tvResultado.setText(resultadoMult_String);
+
+        }else if(rbDividir.isChecked() == true){
+            if(valorIngresado1_Int == 0){
+                Toast.makeText(this, "No se puede dividir por Cero", Toast.LENGTH_LONG).show();
+            }else{
+                int resultadoDiv_Int = valorIngresado1_Int - valorIngresado2_Int;
+                String resultadoDiv_String = String.valueOf(resultadoDiv_Int);
+                //Muestro resultado
+                tvResultado.setText(resultadoDiv_String);
+            }
+
+        }
     }
 }
