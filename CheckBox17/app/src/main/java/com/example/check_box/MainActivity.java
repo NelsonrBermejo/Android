@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
            //Creo variable para poder mostrar dos resultados
             String resultado = "";
             if(cbSumar.isChecked() == true){
-                int sumar = valorIngresado1_Int + valorIngresado2_Int;
+                int suma = valorIngresado1_Int + valorIngresado2_Int;
+                resultado = "El resultado de la suma es " + suma + "/";
 
             }
 
