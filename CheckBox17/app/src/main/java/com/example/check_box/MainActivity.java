@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 resultado = "El resultado de la suma es " + suma + " / ";
             }
             if(cbRestar.isChecked() == true){
-                int resta = valorIngresado1_Int + valorIngresado2_Int;
+                int resta = valorIngresado1_Int - valorIngresado2_Int;
                 resultado = resultado + " La resta es " + resta + " / ";
             }
             tvResultado.setText(resultado);
