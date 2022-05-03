@@ -45,7 +45,10 @@ public class MainActivity extends AppCompatActivity {
             if(cbSumar.isChecked() == true){
                 int suma = valorIngresado1_Int + valorIngresado2_Int;
                 resultado = "El resultado de la suma es " + suma + " / ";
-
+            }
+            if(cbRestar.isChecked() == true){
+                int resta = valorIngresado1_Int + valorIngresado2_Int;
+                resultado = "El resultado de la resta es " + suma + " / ";
             }
 
         }
