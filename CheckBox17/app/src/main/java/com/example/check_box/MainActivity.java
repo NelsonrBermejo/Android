@@ -36,7 +36,13 @@ public class MainActivity extends AppCompatActivity {
         if (et1.getText().toString().isEmpty() || et2.getText().toString().isEmpty()) {
             Toast.makeText(this, "Debe introducir un valor en ambas casillas", Toast.LENGTH_LONG).show();
         }else{
-            
+
+           int valorIngresado1_Int = Integer.parseInt(valorIngresado1_String);
+           int valorIngresado2_Int = Integer.parseInt(valorIngresado2_String);
+
+           //Creo variable para poder mostrar dos resultados
+            String resultado = "";
+
         }
     }
 }
