@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             if(valorIngresado1_Int == 0){
                 Toast.makeText(this, "No se puede dividir por Cero", Toast.LENGTH_LONG).show();
             }else{
-                int resultadoDiv_Int = valorIngresado1_Int - valorIngresado2_Int;
+                int resultadoDiv_Int = valorIngresado1_Int / valorIngresado2_Int;
                 String resultadoDiv_String = String.valueOf(resultadoDiv_Int);
                 //Muestro resultado
                 tvResultado.setText(resultadoDiv_String);
