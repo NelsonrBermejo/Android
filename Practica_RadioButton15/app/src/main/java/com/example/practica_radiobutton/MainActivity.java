@@ -59,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
         }else if(rbDividir.isChecked() == true){
             if(valorIngresado1_Int == 0){
                 Toast.makeText(this, "No se puede dividir por Cero", Toast.LENGTH_LONG).show();
+            }else if (valorIngresado2_Int == 0){
+                Toast.makeText(this, "El segundo valor debe ser diferente de cero", Toast.LENGTH_LONG).show();
             }else{
                 int resultadoDiv_Int = valorIngresado1_Int / valorIngresado2_Int;
                 String resultadoDiv_String = String.valueOf(resultadoDiv_Int);
