@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SpinnerMenu</string>
+    <string name="txt_valor1_String">Ingrese Primer Valor</string>
+    <string name="txt_valor2_String">Ingrese Segundo Valor</string>
+    <string name="button_String">Calcular</string>
+    <string name="TextView_String">Resultado</string>
 </resources>
