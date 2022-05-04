@@ -66,10 +66,10 @@ public class MainActivity extends AppCompatActivity {
                     int div = valorIngresado1_Int / valorIngresado2_Int;
                     String resultado = String.valueOf(div);
                     tv1.setText(resultado);
-                }
-            } else {
+                }else {
 
-                Toast.makeText(this, "No se puede dividir entre 0", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "No se puede dividir entre 0", Toast.LENGTH_LONG).show();
+                }
             }
 
         }
