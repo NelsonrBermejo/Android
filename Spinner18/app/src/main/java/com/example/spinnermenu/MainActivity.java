@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         String opcionesEsp1[] = {"sumar", "restar", "multiplicar", "dividir"};
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, opcionesEsp1);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.spinner_item_operaciones, opcionesEsp1);
 
         esp1.setAdapter(adapter);
     }
