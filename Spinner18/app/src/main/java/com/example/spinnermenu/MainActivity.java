@@ -43,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
             int valorIngresado1_Int = Integer.parseInt(valorIngresado1_String);
             int valorIngresado2_Int = Integer.parseInt(valorIngresado2_String);
 
+            String seleccionSpinnerUsuario = esp1.getSelectedItem().toString();
+
+            if(seleccionSpinnerUsuario.equals("sumar")){
+                int suma = valorIngresado1_Int + valorIngresado2_Int;
+                String resultado = String.valueOf(suma);
+                tv1.setText(resultado);
+            }
 
         }
     }
