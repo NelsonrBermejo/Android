@@ -49,6 +49,27 @@ public class MainActivity extends AppCompatActivity {
                 int suma = valorIngresado1_Int + valorIngresado2_Int;
                 String resultado = String.valueOf(suma);
                 tv1.setText(resultado);
+
+            } else if(seleccionSpinnerUsuario.equals("restar")){
+                int resta = valorIngresado1_Int - valorIngresado2_Int;
+                String resultado = String.valueOf(resta);
+                tv1.setText(resultado);
+
+            } else if(seleccionSpinnerUsuario.equals("multiplicar")){
+                int multi = valorIngresado1_Int * valorIngresado2_Int;
+                String resultado = String.valueOf(multi);
+                tv1.setText(resultado);
+
+            } else if(seleccionSpinnerUsuario.equals("dividir")){
+
+                if(valorIngresado2_Int != 0){
+                    int div = valorIngresado1_Int / valorIngresado2_Int;
+                    String resultado = String.valueOf(div);
+                    tv1.setText(resultado);
+                }
+            } else {
+
+                Toast.makeText(this, "No se puede dividir entre 0", Toast.LENGTH_LONG).show();
             }
 
         }
