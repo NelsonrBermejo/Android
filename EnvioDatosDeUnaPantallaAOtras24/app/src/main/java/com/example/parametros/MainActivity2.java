@@ -15,6 +15,7 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         tv1 = (TextView)findViewById(R.id.TextViewHolaNombre);
-        
+
+        String datoNombre = getIntent().getStringExtra("dato");
     }
 }
