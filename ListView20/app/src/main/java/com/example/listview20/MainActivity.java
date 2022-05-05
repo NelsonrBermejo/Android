@@ -3,8 +3,10 @@ package com.example.listview20;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.ArrayAdapter;
 
 public class MainActivity extends AppCompatActivity {
   private TextView tv1;
@@ -21,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tv1 = (TextView)findViewById(R.id.textView);
-        lv1 = (ListView)findViewById(R.id.ListView);
+        lv1 = (ListView)findViewById(R.id.LV1);
+
+        ArrayAdapter <String> adapter = new ArrayAdapter<String>(this, R.layout.list_item_nombres,nombres);
+        lv1.setAdapter(adapter);
+
     }
 }

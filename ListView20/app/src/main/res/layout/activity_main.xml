@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:id="@+id/ListView"
+        android:id="@+id/LV1"
         android:layout_width="322dp"
         android:layout_height="296dp"
         android:layout_marginStart="16dp"
