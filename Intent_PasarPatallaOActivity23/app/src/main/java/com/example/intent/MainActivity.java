@@ -2,7 +2,9 @@ package com.example.intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,4 +13,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    //onCLick Método para ir a la segunda pantalla
+    public void  Siguiente (View view) {
+        Intent siguiente = new Intent(this, SegundoActivity.class);
+        startActivity(siguiente);
+    }
+
 }
