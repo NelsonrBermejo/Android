@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="40dp"
+        android:onClick="Siguiente"
         android:text="@string/Button_Siguiente_String"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
