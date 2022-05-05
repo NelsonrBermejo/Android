@@ -20,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
     //Método para el botón enviar dato
     public void EnviarDato (View view) {
         Intent i = new Intent(this,MainActivity2.class);
+
         //Pasamos por parametros el valor recibido del usuario.
         i.putExtra("dato",etxNombre.getText().toString());
+        startActivity(i);
     }
 }

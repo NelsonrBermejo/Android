@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginTop="56dp"
+        android:onClick="EnviarDato"
         android:text="@string/ButtonEnviar_String"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
