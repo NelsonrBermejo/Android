@@ -2,4 +2,6 @@
     <string name="app_name">Intent</string>
     <string name="TextView_MainActivity_String">Primer Activity</string>
     <string name="Button_Siguiente_String">Siguiente</string>
+    <string name="TextView_SegundoActivity_String">Segundo Activity</string>
+    <string name="Button_Anterior_String">Anterior</string>
 </resources>
