@@ -3,6 +3,8 @@ package com.example.listview20;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -27,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayAdapter <String> adapter = new ArrayAdapter<String>(this, R.layout.list_item_nombres,nombres);
         lv1.setAdapter(adapter);
+
+        lv1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+        });
 
     }
 }
