@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     public void EnviarDato (View view) {
         Intent i = new Intent(this,MainActivity2.class);
         //Pasamos por parametros el valor recibido del usuario.
+        //"dato" llave a usar en mi otra Activity para identificar el nombre
         i.putExtra("dato",etxNombre.getText().toString());
     }
 }
