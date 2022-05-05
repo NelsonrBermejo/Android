@@ -12,8 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="36dp"
+        android:onClick="Regresar"
         android:text="@string/TextView_holaNombre_String"
-        android:textSize="24sp"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,8 +24,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="28dp"
+        android:onClick="Regresar"
         android:text="@string/ButtonRegresar_String"
-        android:textSize="24sp"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextViewHolaNombre" />
 </androidx.constraintlayout.widget.ConstraintLayout>
