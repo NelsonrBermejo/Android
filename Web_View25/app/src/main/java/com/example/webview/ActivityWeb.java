@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class ActivityWeb extends AppCompatActivity {
 
@@ -16,5 +17,6 @@ public class ActivityWeb extends AppCompatActivity {
         wv1 = (WebView)findViewById(R.id.webView1);
 
         String URL = getIntent().getStringExtra("sitioWeb");
+        wv1.setWebViewClient(new WebViewClient());
     }
 }
