@@ -3,6 +3,7 @@ package com.example.webview;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,5 +17,7 @@ public class MainActivity extends AppCompatActivity {
         et1 = (EditText)findViewById(R.id.txt_web);
     }
 
-    
+    public void Navegar (View view){
+
+    }
 }
