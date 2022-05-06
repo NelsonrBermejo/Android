@@ -18,5 +18,6 @@ public class ActivityWeb extends AppCompatActivity {
 
         String URL = getIntent().getStringExtra("sitioWeb");
         wv1.setWebViewClient(new WebViewClient());
+        wv1.loadUrl("http://"+URL);
     }
 }
