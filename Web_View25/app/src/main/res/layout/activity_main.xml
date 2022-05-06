@@ -10,17 +10,23 @@
         android:id="@+id/txt_web"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="@string/txt_web_String"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="34dp" />
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="110dp" />
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/buttonIrAlSitio_String"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_web" />
 </androidx.constraintlayout.widget.ConstraintLayout>
