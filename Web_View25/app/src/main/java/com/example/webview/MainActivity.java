@@ -21,5 +21,6 @@ public class MainActivity extends AppCompatActivity {
     public void Navegar (View view){
 
         Intent i = new Intent(this,ActivityWeb.class);
+        i.putExtra("sitioWeb",et1.getText().toString());
     }
 }
