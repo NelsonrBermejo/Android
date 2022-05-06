@@ -12,5 +12,7 @@ public class ActivityWeb extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
+
+        wv1 = (WebView)findViewById(R.id.webView1);
     }
 }
