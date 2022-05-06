@@ -14,5 +14,7 @@ public class ActivityWeb extends AppCompatActivity {
         setContentView(R.layout.activity_web);
 
         wv1 = (WebView)findViewById(R.id.webView1);
+
+        String URL = getIntent().getStringExtra("sitioWeb");
     }
 }
