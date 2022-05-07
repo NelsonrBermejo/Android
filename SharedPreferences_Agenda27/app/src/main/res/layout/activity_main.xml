@@ -13,8 +13,8 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="48dp"
         android:ems="10"
+        android:hint="@string/txt_nombre_String"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,6 +26,7 @@
         android:layout_marginTop="28dp"
         android:ems="10"
         android:gravity="start|top"
+        android:hint="@string/txt_datos_String"
         android:inputType="textMultiLine"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_nombre" />
@@ -36,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="56dp"
-        android:text="Button"
+        android:text="@string/buttonGuardar_String"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_datos" />
 
@@ -46,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:layout_marginEnd="124dp"
-        android:text="Button"
+        android:text="@string/buttonBuscar_String"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_datos" />
 </androidx.constraintlayout.widget.ConstraintLayout>

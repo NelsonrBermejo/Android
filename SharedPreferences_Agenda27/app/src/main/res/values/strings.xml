@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SharedPreferences</string>
+    <string name="txt_nombre_String">Nombre del Contacto</string>
+    <string name="txt_datos_String">Datos del Contacto</string>
+    <string name="buttonGuardar_String">Guardar</string>
+    <string name="buttonBuscar_String">Buscar</string>
 </resources>
