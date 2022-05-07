@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,4 +25,11 @@ public class MainActivity extends AppCompatActivity {
         //tener en cuenta "mail" y ""!
         et1Mail.setText(preferences.getString("mail",""));
     }
+
+    //Método para el button Guardar
+    public void Guardar (View view) {
+        SharedPreferences preferencias = getSharedPreferences("datoMail", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferencias.edit();
+    }
+
 }
