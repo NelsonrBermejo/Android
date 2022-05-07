@@ -2,6 +2,8 @@ package com.example.sharedpreferences;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.EditText;
 
@@ -17,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         et1Mail = (EditText)findViewById(R.id.EditTextEMail);
-        
+
+        SharedPreferences preferences = getSharedPreferences("datoMail", Context.MODE_PRIVATE);
     }
 }
