@@ -21,5 +21,7 @@ public class MainActivity extends AppCompatActivity {
         et1Mail = (EditText)findViewById(R.id.EditTextEMail);
 
         SharedPreferences preferences = getSharedPreferences("datoMail", Context.MODE_PRIVATE);
+        //tener en cuenta "mail" y ""!
+        et1Mail.setText(preferences.getString("mail",""));
     }
 }
