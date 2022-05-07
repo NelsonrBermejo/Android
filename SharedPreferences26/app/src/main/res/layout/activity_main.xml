@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
         android:layout_marginTop="60dp"
+        android:onClick="Guardar"
         android:text="@string/ButtonGuardar_String"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"

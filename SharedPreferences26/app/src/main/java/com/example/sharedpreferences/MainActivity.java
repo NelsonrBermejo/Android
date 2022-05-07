@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = preferencias.edit();
         editor.putString("mail",et1Mail.getText().toString());
         editor.commit();
-
+        //cierra ventana Actual
         finish();
     }
 
