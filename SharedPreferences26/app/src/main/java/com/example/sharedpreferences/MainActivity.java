@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     public void Guardar (View view) {
         SharedPreferences preferencias = getSharedPreferences("datoMail", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferencias.edit();
+        editor.putString("mail",et1Mail.getText().toString());
     }
 
 }
