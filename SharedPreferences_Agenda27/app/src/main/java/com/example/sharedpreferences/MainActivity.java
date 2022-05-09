@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Método para el Botón GUARDAR
-    private  void GUARDAR (View view) {
+    public  void GUARDAR (View view) {
 
         String nombre = et_nombre.getText().toString();
         String datos = et_datos.getText().toString();
