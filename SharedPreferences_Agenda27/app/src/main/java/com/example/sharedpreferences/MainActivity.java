@@ -22,6 +22,10 @@ public class MainActivity extends AppCompatActivity {
     //Utilizando SharedPreferences como en la App Anterior
     }
 
+    //Método para el Botón GUARDAR
+    private  void GUARDAR (View view) {
 
+        String nombre 
+    }
 
 }
