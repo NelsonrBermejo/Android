@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Método para el Botón GUARDAR
-    public  void GUARDAR (View view) {
+    public void GUARDAR (View view) {
 
         String nombre = et_nombre.getText().toString();
         String datos = et_datos.getText().toString();
@@ -37,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
         obj_editor.commit();
 
         Toast.makeText(this, "El contacto ha sido guardado", Toast.LENGTH_SHORT).show();
+    }
+
+    public void BUSCAR (View view) {
+
+        String buscarNombre = et_nombre.getText().toString();
+        SharedPreferences preferencias = getSharedPreferences("agenda", Context.MODE_PRIVATE);
+        String datos = preferencias.getString(buscarNombre,"");
     }
 
 }
