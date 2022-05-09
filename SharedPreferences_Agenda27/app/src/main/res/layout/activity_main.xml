@@ -30,6 +30,7 @@
         android:gravity="start|top"
         android:hint="@string/txt_datos_String"
         android:inputType="textMultiLine"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_nombre" />
 
