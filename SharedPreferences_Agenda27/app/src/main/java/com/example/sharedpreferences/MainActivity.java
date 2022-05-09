@@ -2,6 +2,8 @@ package com.example.sharedpreferences;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -25,7 +27,15 @@ public class MainActivity extends AppCompatActivity {
     //Método para el Botón GUARDAR
     private  void GUARDAR (View view) {
 
-        String nombre 
+        String nombre = et_nombre.getText().toString();
+        String datos = et_datos.getText().toString();
+
+        SharedPreferences preferencias = getSharedPreferences("agenda", Context.MODE_PRIVATE);
+        SharedPreferences.Editor obj_editor = preferencias.edit();
+        obj_editor.putString(nombre,datos);
+        obj_editor.commit();
+
+        
     }
 
 }
