@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         obj_editor.putString(nombre,datos);
         obj_editor.commit();
 
-        
+        Toast.makeText(this, "El contacto ha sido guardado", Toast.LENGTH_SHORT).show();
     }
 
 }
