@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -66,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
         }catch (IOException e){
 
         }
+        Toast.makeText(this, "Bitacora guardada correctamente", Toast.LENGTH_SHORT).show();
+        finish();
     }
 
 
