@@ -2,12 +2,15 @@ package com.example.almacenamientodedatosficheros;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
 public class MainActivity extends AppCompatActivity {
     private EditText et1;
@@ -51,6 +54,18 @@ public class MainActivity extends AppCompatActivity {
                 return true;
              return false;
 
+    }
+
+    //Método save button
+    public void  Guardar(View view){
+        try {
+            OutputStreamWriter archivo = new OutputStreamWriter(openFileOutput("bitacora.txt", Activity.MODE_PRIVATE));
+            archivo.write(et1.getText().toString());
+            archivo.flush();
+            archivo.close();
+        }catch (IOException e){
+
+        }
     }
 
 
