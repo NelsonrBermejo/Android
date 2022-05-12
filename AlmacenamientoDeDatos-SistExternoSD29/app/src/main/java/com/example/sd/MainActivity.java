@@ -54,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
         String nombre = et_nombre.getText().toString();
 
         try{
-
+            File tarjetaSD = Environment.getExternalStorageDirectory();
+            File rutaArchivo = new File(tarjetaSD.getPath(),nombre);
         }catch (IOException e){
             Toast.makeText(this, "Error al leer el archivo", Toast.LENGTH_SHORT).show();
         }
