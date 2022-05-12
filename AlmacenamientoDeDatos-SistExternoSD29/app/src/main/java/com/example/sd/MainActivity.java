@@ -44,7 +44,19 @@ public class MainActivity extends AppCompatActivity {
             et_nombre.setText("");
             et_contenido.setText("");
         }catch (IOException e){
+            Toast.makeText(this, "No se pudo guardar", Toast.LENGTH_SHORT).show();
+        }
+    }
 
+    //Método consultar
+    public void CONSULTAR (View view){
+        //nombre de variable en la que voy a alojar el nombre del archivo que el usuario quiere consultar
+        String nombre = et_nombre.getText().toString();
+
+        try{
+
+        }catch (IOException e){
+            Toast.makeText(this, "Error al leer el archivo", Toast.LENGTH_SHORT).show();
         }
     }
 }
