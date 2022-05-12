@@ -12,6 +12,7 @@ import android.widget.Toast;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class MainActivity extends AppCompatActivity {
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, tarjetaSD.getPath(), Toast.LENGTH_SHORT).show();
             File rutaArchivo = new File(tarjetaSD.getPath(),nombre);
 
+
+
             OutputStreamWriter crearArchivo = new OutputStreamWriter(openFileOutput(nombre, Activity.MODE_PRIVATE));
             crearArchivo.write(contenido);
             crearArchivo.flush();
@@ -54,9 +57,11 @@ public class MainActivity extends AppCompatActivity {
         //nombre de variable en la que voy a alojar el nombre del archivo que el usuario quiere consultar
         String nombre = et_nombre.getText().toString();
 
+
         try{
             File tarjetaSD = Environment.getExternalStorageDirectory();
             File rutaArchivo = new File(tarjetaSD.getPath(),nombre);
+            InputStreamReader abrirArchivo = new InputStreamReader(openFileInput(nombre));
 
             //read
             BufferedReader leerArchivo = new BufferedReader(abrirArchivo);
