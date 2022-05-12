@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">TableLayout</string>
+
+    <string name="button_1_String">1</string>
+    <string name="button_2_String">2</string>
+    <string name="button_3_String">3</string>
+    <string name="button_4_String">4</string>
+    <string name="button_5_String">5</string>
+
+    <string name="button_6_String">6</string>
+    <string name="button_7_String">7</string>
+    <string name="button_8_String">8</string>
+    <string name="button_9_String">9</string>
+    <string name="button_0_String">0</string>
+
+    <string name="restar_String">-</string>
+    <string name="sumar_String">+</string>
+    <string name="multiplicar_String">*</string>
+    <string name="dividir_String">/</string>
+    <string name="resultado_String">=</string>
+
+    <string name="restaurarValores_String">Restaurar Valores</string>
+    <string name="TextView_String">0</string>
+
+
 </resources>
