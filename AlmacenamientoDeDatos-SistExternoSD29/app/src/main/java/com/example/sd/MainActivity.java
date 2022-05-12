@@ -69,7 +69,10 @@ public class MainActivity extends AppCompatActivity {
                 contenidoCompleto = contenidoCompleto + linea + "\n";
                 linea = leerArchivo.readLine();
             }
-            
+
+            leerArchivo.close();
+            abrirArchivo.close();
+            et_contenido.setText(contenidoCompleto);
 
 
         }catch (IOException e){
