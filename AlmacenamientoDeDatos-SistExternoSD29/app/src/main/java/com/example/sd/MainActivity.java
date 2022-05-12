@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -56,6 +57,21 @@ public class MainActivity extends AppCompatActivity {
         try{
             File tarjetaSD = Environment.getExternalStorageDirectory();
             File rutaArchivo = new File(tarjetaSD.getPath(),nombre);
+
+            //read
+            BufferedReader leerArchivo = new BufferedReader(abrirArchivo);
+
+            String linea = leerArchivo.readLine();
+            String contenidoCompleto ="";
+
+
+            while (linea != null){
+                contenidoCompleto = contenidoCompleto + linea + "\n";
+                linea = leerArchivo.readLine();
+            }
+            
+
+
         }catch (IOException e){
             Toast.makeText(this, "Error al leer el archivo", Toast.LENGTH_SHORT).show();
         }
