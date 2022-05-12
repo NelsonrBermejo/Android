@@ -1,4 +1,4 @@
-package com.example.scrollview;
+package com.example.ernesto.pruebascrollview;
 
 import org.junit.Test;
 
